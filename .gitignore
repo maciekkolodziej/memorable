@@ -22,3 +22,5 @@
 .rbenv-version
 .powenv
 .env
+
+spec/examples.txt
