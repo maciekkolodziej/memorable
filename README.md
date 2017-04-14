@@ -1,24 +1,4 @@
-# README
+# Memorable
+[![CircleCI](https://circleci.com/gh/maciekkolodziej/memorable.svg?style=shield)](https://circleci.com/gh/maciekkolodziej/memorable)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Memorable is simple rails app used to store and memorize valuable information. 
