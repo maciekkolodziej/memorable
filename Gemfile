@@ -13,7 +13,6 @@ gem 'dotenv-rails', '~> 2.2.0', require: 'dotenv/rails-now'
 gem 'bcrypt', '~> 3.1.7'                  # Use ActiveModel has_secure_password
 gem 'coffee-rails', '~> 4.2'              # Use CoffeeScript for .coffee assets and views
 gem 'devise', '~> 4.2.1'                  # Flexible authentication solution for Rails with Warden
-gem 'devise-async', '0.7.0'               # Send Devise's emails in background.
 gem 'faker', '~> 1.7.3', require: false   # A library for generating fake data.
 gem 'haml', '~> 4.0.7'                    # Haml support
 gem 'haml-rails', '~> 0.9.0'              # Use haml by default
@@ -22,10 +21,11 @@ gem 'omniauth-google-oauth2', '~> 0.4.1'  # Oauth2 strategy for Google
 gem 'pg', '~> 0.18'                       # Use postgresql as the database for Active Record
 gem 'puma', '~> 3.0'                      # Use Puma as the app server
 gem 'rails', '~> 5.0.2'                   # Rails
-gem 'redis', '~> 3.0'                     # Use Redis adapter to run Action Cable in production
+gem 'redis', '~> 3.3.3'                   # Use Redis adapter to run Action Cable in production
+gem 'rollbar', '~> 2.14.1'                # User Rollbar to log and track exceptions
 gem 'sass-rails', '~> 5.0'                # Use SCSS for stylesheets
 gem 'turbolinks', '~> 5'                  # Turbolinks makes navigating your web application faster.
-gem 'uglifier', '>= 1.3.0'                # Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '~> 3.2.0'                # Use Uglifier as compressor for JavaScript assets
 
 group :development, :test do
   gem 'binding_of_caller', '~> 0.7.2'     # Retrieve the binding of a method's caller in MRI 1.9.2+
@@ -42,7 +42,7 @@ group :development do
   gem 'better_errors', '~> 2.1.1'         # Better error page for Rack apps
   gem 'bullet', '~> 5.4'                  # Help to kill N+1 queries and unused eager loading
   gem 'letter_opener', '~> 1.4.1'         # Preview email in the default browser instead sending it.
-  gem 'listen', '~> 3.0.5'
+  gem 'listen', '~> 3.1.5'
   gem 'spring'                            # Keeps your application running in the background.
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'           # Use <%= console %> anywhere in the code.
