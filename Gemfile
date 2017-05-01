@@ -7,12 +7,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Load env variables from .env before other gems are loaded
-gem 'dotenv-rails', '~> 2.2.0', require: 'dotenv/rails-now'
-
 gem 'bcrypt', '~> 3.1.7'                  # Use ActiveModel has_secure_password
-gem 'coffee-rails', '~> 4.2'              # Use CoffeeScript for .coffee assets and views
-gem 'devise', '~> 4.2.1'                  # Flexible authentication solution for Rails with Warden
+gem 'coffee-rails', '~> 4.2.1'            # Use CoffeeScript for .coffee assets and views
+# gem 'devise', '~> 4.2.1'                # Flexible authentication solution for Rails with Warden
+gem 'devise',                             # Flexible authentication solution for Rails with Warden
+    github: 'plataformatec/devise'        # TO-DO switch to new version which works with Rails 5.1
 gem 'faker', '~> 1.7.3', require: false   # A library for generating fake data.
 gem 'haml', '~> 4.0.7'                    # Haml support
 gem 'haml-rails', '~> 0.9.0'              # Use haml by default
@@ -20,7 +19,7 @@ gem 'jquery-rails', '~> 4.3.1'            # Use jquery as the JavaScript library
 gem 'omniauth-google-oauth2', '~> 0.4.1'  # Oauth2 strategy for Google
 gem 'pg', '~> 0.18'                       # Use postgresql as the database for Active Record
 gem 'puma', '~> 3.0'                      # Use Puma as the app server
-gem 'rails', '~> 5.0.2'                   # Rails
+gem 'rails', '~> 5.1'                     # Rails
 gem 'redis', '~> 3.3.3'                   # Use Redis adapter to run Action Cable in production
 gem 'rollbar', '~> 2.14.1'                # User Rollbar to log and track exceptions
 gem 'sass-rails', '~> 5.0'                # Use SCSS for stylesheets
@@ -40,7 +39,7 @@ end
 
 group :development do
   gem 'better_errors', '~> 2.1.1'         # Better error page for Rack apps
-  gem 'bullet', '~> 5.4'                  # Help to kill N+1 queries and unused eager loading
+  gem 'bullet', '~> 5.5.1'                # Help to kill N+1 queries and unused eager loading
   gem 'letter_opener', '~> 1.4.1'         # Preview email in the default browser instead sending it.
   gem 'listen', '~> 3.1.5'
   gem 'spring'                            # Keeps your application running in the background.
