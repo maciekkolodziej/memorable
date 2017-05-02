@@ -8,6 +8,8 @@ git_source(:github) do |repo_name|
 end
 
 gem 'bcrypt', '~> 3.1.7'                  # Use ActiveModel has_secure_password
+gem 'bootstrap-sass', '~> 3.3.7'          # Bootstrap 3
+gem 'bootswatch-rails', '~> 3.3.5'        # Bootswatch with themes
 gem 'coffee-rails', '~> 4.2.1'            # Use CoffeeScript for .coffee assets and views
 # gem 'devise', '~> 4.2.1'                # Flexible authentication solution for Rails with Warden
 gem 'devise',                             # Flexible authentication solution for Rails with Warden
@@ -20,9 +22,12 @@ gem 'omniauth-google-oauth2', '~> 0.4.1'  # Oauth2 strategy for Google
 gem 'pg', '~> 0.18'                       # Use postgresql as the database for Active Record
 gem 'puma', '~> 3.0'                      # Use Puma as the app server
 gem 'rails', '~> 5.1'                     # Rails
+gem 'rails_bootstrap_navbar', '~> 2.0.1'  # Easily generate a Twitter Bootstrap navbar in Rails app
 gem 'redis', '~> 3.3.3'                   # Use Redis adapter to run Action Cable in production
 gem 'rollbar', '~> 2.14.1'                # User Rollbar to log and track exceptions
 gem 'sass-rails', '~> 5.0'                # Use SCSS for stylesheets
+gem 'simple_form',                        # Easy forms with nice DSL
+    github: 'maciekkolodziej/simple_form' # TO-DO switch to new version which works with Rails 5.1
 gem 'turbolinks', '~> 5'                  # Turbolinks makes navigating your web application faster.
 gem 'uglifier', '~> 3.2.0'                # Use Uglifier as compressor for JavaScript assets
 

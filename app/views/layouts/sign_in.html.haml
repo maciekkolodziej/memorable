@@ -6,7 +6,7 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-    = render 'layouts/navbar'
-    .container
-      = yield
+  %body.sign-in
+    .row
+      .col-sm-4.col-sm-offset-4
+        = yield

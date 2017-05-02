@@ -1,0 +1,18 @@
+<h2 class="text-center">Send reset password instructions</h2>
+<hr>
+
+<%= simple_form_for(resource,
+                    as: resource_name,
+                    url: unlock_path(resource_name),
+                    html: { method: :post }) do |f| %>
+
+  <%= f.input :email, autofocus: true %>
+  <div class="form-group">
+    <%= f.button :submit, "Resend unlock instructions",
+                 class: 'btn btn-primary btn-lg btn-block' %>
+  </div>
+<% end %>
+
+<div class="text-center">
+  <%= render "devise/shared/links" %>
+</div>
