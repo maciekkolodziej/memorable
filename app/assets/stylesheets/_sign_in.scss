@@ -1,0 +1,9 @@
+@import "variables";
+
+.sign-in {
+  background-color: $gray-lighter;
+
+  hr {
+    border-top-color: $gray-light;
+  }
+}

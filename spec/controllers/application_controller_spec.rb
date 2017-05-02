@@ -25,7 +25,7 @@ RSpec.describe ApplicationController, type: :controller do
 
       it 'renders template' do
         get_root
-        expect(response.body).to match(/#{user.email}/im)
+        expect(response.body).to match(/Welcome/im)
       end
     end
   end
