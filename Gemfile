@@ -15,8 +15,8 @@ gem 'coffee-rails', '~> 4.2.1'            # Use CoffeeScript for .coffee assets 
 gem 'devise',                             # Flexible authentication solution for Rails with Warden
     github: 'plataformatec/devise'        # TO-DO switch to new version which works with Rails 5.1
 gem 'faker', '~> 1.7.3', require: false   # A library for generating fake data.
-gem 'haml', '~> 4.0.7'                    # Haml support
-gem 'haml-rails', '~> 0.9.0'              # Use haml by default
+gem 'haml', '~> 5.0.0'                    # Haml support
+gem 'haml-rails', '~> 1.0.0'              # Use haml by default
 gem 'jquery-rails', '~> 4.3.1'            # Use jquery as the JavaScript library
 gem 'omniauth-google-oauth2', '~> 0.4.1'  # Oauth2 strategy for Google
 gem 'pg', '~> 0.18'                       # Use postgresql as the database for Active Record
