@@ -28,6 +28,8 @@ gem 'rollbar', '~> 2.14.1'                # User Rollbar to log and track except
 gem 'sass-rails', '~> 5.0'                # Use SCSS for stylesheets
 gem 'simple_form',                        # Easy forms with nice DSL
     github: 'maciekkolodziej/simple_form' # TO-DO switch to new version which works with Rails 5.1
+gem 'thor', '0.19.1'                      # TO-DO rem downgrade github.com/rails/rails/issues/27229
+gem 'toastr_rails', '~> 2.1.3'            # Toastr js gem for rails
 gem 'turbolinks', '~> 5'                  # Turbolinks makes navigating your web application faster.
 gem 'uglifier', '~> 3.2.0'                # Use Uglifier as compressor for JavaScript assets
 
@@ -38,8 +40,6 @@ group :development, :test do
   gem 'pry-inline', '~> 1.0.2'            # Inline variables view like RubyMine in Pry
   gem 'pry-nav', '~> 0.2.4'               # Binding navigation commands for Pry
   gem 'pry-rails', '~> 0.3.4'             # Rails >= 3 pry initializer
-  gem 'rspec-rails', '~> 3.5.2'           # Testing framework for Rails 3.x, 4.x and 5.0.
-  gem 'rspec-retry', '~> 0.5.3'           # Retry randomly failing rspec example
 end
 
 group :development do
@@ -53,7 +53,12 @@ group :development do
 end
 
 group :test do
+  gem 'capybara', '~> 2.13.0'             # Acceptance test framework for web applications
+  gem 'capybara-screenshot', '~> 1.0.14'  # Automatically save screen shots when a scenario fails
   gem 'database_cleaner', '~> 1.5.3'      # Set of strategies for cleaning your database in Ruby
+  gem 'rspec-rails', '~> 3.5.2'           # Testing framework for Rails 3.x, 4.x and 5.0.
+  gem 'rspec-retry', '~> 0.5.3'           # Retry randomly failing rspec example
+  gem 'selenium-webdriver', '~> 3.4.0'    # A browser automation framework and ecosystem
   gem 'shoulda-matchers', '~> 3.1.1',     # Collection of testing matchers extracted from Shoulda
       require: false
 end
